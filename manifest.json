@@ -1,0 +1,27 @@
+{
+        "name": "YOUR_EXT_NAME",
+        "version": "1.0",
+        "description": "TODO",
+        "key": YOUR_EXT_KEY,
+        "manifest_version": 3,
+        "action": {
+          "default_title": "YOUR_EXT_NAME",
+          "default_icon": "img/icon_48.png",
+          "default_popup": "index.html"
+        },
+        "background": {
+          "service_worker": "service-worker.js"
+        },
+        "oauth2": {
+          "client_id": YOUR_CLIENT_ID,
+          "scopes":["https://www.googleapis.com/auth/contacts.readonly", "https://www.googleapis.com/auth/gmail.modify"]
+        },
+        "permissions": [
+          "identity"
+        ],
+
+    "icons": {
+        "16": "img/icon_16.png",
+        "48": "img/icon_48.png"
+    }
+}
