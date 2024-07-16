@@ -5,7 +5,7 @@ A Chrome extension built with React that uses OAuth 2.0 for Gmail API integratio
 
 In the project directory, you can run:
 
-### `npm run build`
+### `npm run install`
 install dependencies
 
 ### `npm run build`
