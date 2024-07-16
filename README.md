@@ -13,4 +13,7 @@ bundle the extension.
 
 ## Test extension
 
-To test the extension, build the code, and load the generated `dist` directory under `chrome://extensions/` -> Load unpacked
+To test the extension: 
+* Replace the corresponding values in manifest.json with your extension's name and key, and your project client_id
+* build the code
+* load the generated `dist` directory under `chrome://extensions/` -> Load unpacked
