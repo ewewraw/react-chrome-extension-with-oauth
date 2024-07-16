@@ -2,7 +2,7 @@
         "name": "YOUR_EXT_NAME",
         "version": "1.0",
         "description": "TODO",
-        "key": YOUR_EXT_KEY,
+        "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu3AbI73EucqkF0dd/JE6RiThUwRxLms+wyYdJ8q9UgJx0WaMA4qNMnCLStJ35DNgJCbnhBfgIoEpuF5woXD9b+ZyoFIOp8FmH0QDvPcjp8CDHtdQ2xGzloQDLaxlU/d1q2n4MKeKtuAd8LtLo2BuHkm9doHkguvlKtJklK1xaohkpP0XrhstsIjzSp9SBSz1CVDM8x1sNsIBIinLihvHgHrAWFNPMeX7AvI3ET73Nzx3NIvygmvKi6bZ/b0QkG8Hh9UoZ1cwW5UNILbq2BxYnE78WVbPXje93FjNAzMWnEgzZGFXuCKiXdJdoKMEKs/62O8K/DAtgBu8N1up/OcvaQIDAQAB",
         "manifest_version": 3,
         "action": {
           "default_title": "YOUR_EXT_NAME",
@@ -13,13 +13,15 @@
           "service_worker": "service-worker.js"
         },
         "oauth2": {
-          "client_id": YOUR_CLIENT_ID,
+          "client_id": "1069217596542-93532uh7u02au44nr9gavvmm0j8ep1st.apps.googleusercontent.com",
           "scopes":["https://www.googleapis.com/auth/contacts.readonly", "https://www.googleapis.com/auth/gmail.modify"]
         },
         "permissions": [
           "identity"
         ],
-
+        "host_permissions": [
+          "https://email-sorter-1069217596542.europe-west2.run.app/"
+        ],
     "icons": {
         "16": "img/icon_16.png",
         "48": "img/icon_48.png"
