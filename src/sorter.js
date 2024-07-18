@@ -1,4 +1,6 @@
-export async function helloWorld() {
+
+  export async function sortEmails(rawEmails) {
+   console.log('the passed data: ', rawEmails)
     try {
       // Get the JWT token using chrome.identity.getAuthToken
       const token = await new Promise((resolve, reject) => {
@@ -10,13 +12,15 @@ export async function helloWorld() {
           }
         });
       });
-  
-      // Make the fetch request with the token in the Authorization header
-      const response = await fetch('https://email-sorter-1069217596542.europe-west2.run.app', {
-        method: 'GET', 
+
+      const response = await fetch('some-end-point/', {
+        method: 'POST', 
         headers: {
-          'Authorization': `Bearer ${token}` 
-        }
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(rawEmails) 
+
       });
   
       if (!response.ok) {
@@ -26,9 +30,9 @@ export async function helloWorld() {
       console.log('resp: ', response)
       const data = await response.json(); 
       console.log('Response data:', data);
+      return data;
   
     } catch (error) {
       console.error('Error sending request:', error);
     }
   }
-  
